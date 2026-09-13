@@ -702,3 +702,67 @@ html.anim .materialize.in-view {
   width: 200px;
 }
 
+.faq {
+  max-width: 780px;
+  margin-inline: auto;
+}
+
+.faq__item {
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--faq-border, rgba(15, 23, 42, 0.10));
+}
+
+.faq__item:last-child {
+  border-bottom: 1px solid var(--faq-border, rgba(15, 23, 42, 0.10));
+}
+
+.faq__q {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+.faq__a {
+  margin: 0;
+  max-width: 68ch;
+  line-height: 1.65;
+  color: var(--faq-answer, #4b5563);
+}
+
+.faq__a code {
+  font-size: 0.9em;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  background: var(--faq-code-bg, rgba(15, 23, 42, 0.06));
+}
+
+/* Dark theme (you already use Bootstrap's data-bs-theme) */
+
+[data-bs-theme="dark"] .faq__item {
+  border-color: var(--faq-border-dark, rgba(255, 255, 255, 0.12));
+}
+
+[data-bs-theme="dark"] .faq__a {
+  color: var(--faq-answer-dark, #9ca3af);
+}
+
+[data-bs-theme="dark"] .faq__a code {
+  background: var(--faq-code-bg-dark, rgba(255, 255, 255, 0.10));
+}
+
+/* Small screens */
+
+@media (max-width: 640px) {
+  .faq__item {
+    padding: 1.25rem 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .faq__q {
+    font-size: 1.05rem;
+  }
+}
+

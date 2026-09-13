@@ -1,0 +1,22 @@
+# Agent-Native
+
+> Agent-Native turns your existing website into a clean, structured version for AI agents like ChatGPT, Claude and Perplexity — using JSON-LD, Markdown and an llms.txt index. Human visitors keep seeing your normal page, and the canonical always points to the original URL.
+
+Agent-Native is available two ways: a WordPress plugin that detects AI agents at request time and serves the structured version dynamically, and a browser-based web tool for static sites that runs entirely in your browser (your files are never uploaded). It is built by otterbit.io.
+
+## Pages
+- [Home](https://agent-native.site/): What Agent-Native does and how it works — one page, two views (humans see your design, agents see structure).
+- [WordPress plugin](https://github.com/otterbit-io/agent-native-wp/releases): Runtime agent detection for WordPress sites. Dynamically serves the structured version, generates llms.txt, adds JSON-LD, rate limiting, and an access log with CSV export.
+- [Web tool](https://tool.agent-native.site): For static sites. Upload your site's ZIP and get back an agent-native version plus the server configuration. Runs locally in the browser.
+
+## How it works
+- Detects AI agents by user agent and serves them clean HTML with JSON-LD plus a Markdown version of each page — just the content, without navigation and layout clutter.
+- Generates `llms.txt` and `llms-full.txt` as a machine-readable index of your content, plus server rules that direct agents to them.
+- No cloaking: the agent version shows the same content as the human page, and the canonical tag always points to the original human-readable URL.
+- Best-effort by design: user-agent detection can be spoofed and is never foolproof.
+
+## About
+- [otterbit.io on GitHub](https://github.com/otterbit-io): The team behind Agent-Native.
+
+## Optional
+- [Agent-Native on Product Hunt](https://www.producthunt.com/products/agent-native): Product Hunt listing.

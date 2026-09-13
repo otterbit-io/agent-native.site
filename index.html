@@ -1,11 +1,27 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="de">
+<html data-bs-theme="light" lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Agent-Native - Your website, readable for AI</title>
-    <meta name="description" content="agent-native.site generates a clean, structured version of your existing website for AI agents - using JSON-LD, Markdown, and llms.txt. People see your regular page just as it is.">
+    <title>Agent-Native - Make Your Website Readable for AI Agents (llms.txt, JSON-LD)</title>
+    <meta name="twitter:title" content="Agent-Native - Make Your Website Readable for AI Agents">
+    <meta property="og:title" content="Agent-Native - Make Your Website Readable for AI Agents">
+    <meta name="twitter:description" content="Turn any site into a clean, structured version for AI agents with JSON-LD, Markdown and llms.txt. Humans see your normal page.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:alt" content="Agent-Native - built for humans, readable for AI agents">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:url" content="https://agent-native.site/">
+    <meta property="og:description" content="Turn any site into a clean, structured version for AI agents (ChatGPT, Claude, Perplexity) with JSON-LD, Markdown and llms.txt. Humans see your normal page.">
+    <meta property="og:site_name" content="Agent-Native">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta property="og:image" content="https://agent-native.site/assets/img/og-img.webp">
+    <meta name="twitter:image" content="https://agent-native.site/assets/img/og-img.webp">
+    <meta name="description" content="Agent-Native turns your existing site into a clean, structured version for AI agents like ChatGPT, Claude &amp; Perplexity - via JSON-LD, Markdown and llms.txt. Humans see your normal page.">
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
@@ -39,6 +55,7 @@
                     <h1 class="display"><span class="reveal" data-immediate="" style="--d:.02s;">Built for humans.</span><span class="reveal display__muted" data-immediate="" style="--d:.10s;">Readable for AI agents.</span></h1>
                     <p class="lead reveal" data-immediate="" style="--d:.18s;"> agent-native.site turns your existing website into a clean, structured version for AI agents like ChatGPT, Claude or Perplexity - with JSON-LD, Markdown and a&nbsp;<code>llms.txt</code>-Index. Your users see your unaltered website.</p>
                     <div class="hero__cta reveal" data-immediate="" style="--d:.26s;"><a class="btn btn--primary" role="button" data-link="wordpress-plugin" href="https://github.com/otterbit-io/agent-native-wp/releases">WordPress-Plugin</a><a class="btn btn--ghost" role="button" data-link="web-tool" href="https://tool.agent-native.site">Web-Tool</a></div>
+                    <div style="margin-top:30px;"><a href="https://www.producthunt.com/products/agent-native?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-agent-native" target="_blank" rel="noopener noreferrer"><img alt="AGENT-NATIVE - Turn any site into a agent-native version | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1249424&amp;theme=light&amp;t=1789320399819"></a></div>
                     <p class="hero__trust reveal" data-immediate="" style="--d:.32s;">Same contents, just machine readable. Canonical still points to your original site.</p>
                 </div>
                 <div class="showcase reveal materialize" data-immediate="" style="--d:.20s;" aria-hidden="true">
@@ -112,9 +129,69 @@
                 <p class="honest__text honest__text--dim"> And let's be honest: User-agent detection can be spoofed and is never foolproof. agent-native.site is a solid “best-effort” approach, not an impenetrable fortress. </p>
             </div>
         </section>
-    </main>
+        <section id="faq" class="section section--tint">
+            <div class="section__head reveal">
+                <h2 class="h2">Frequently asked questions</h2>
+                <p class="section__intro">Everything you need to know about making your site readable for AI agents.</p>
+            </div>
+            <div class="faq">
+                <article class="faq__item reveal">
+                    <h3 class="faq__q">What is an llms.txt file?</h3>
+                    <p class="faq__a">llms.txt is an emerging standard - think robots.txt, but for AI. It's a Markdown index that tells AI agents like ChatGPT, Claude and Perplexity what your site is about and points them to your most important pages, so they can read and cite you accurately. Agent-Native generates it (plus llms-full.txt) for you automatically.</p>
+                </article>
+                <article class="faq__item reveal">
+                    <h3 class="faq__q">How does Agent-Native make my website readable for AI agents?</h3>
+                    <p class="faq__a">When a known AI agent requests a page, Agent-Native serves a clean, structured version of the same content - semantic HTML with JSON-LD and a Markdown version - without the navigation, scripts and layout clutter a model discards anyway. Your human visitors keep seeing your normal design.</p>
+                </article>
+                <article class="faq__item reveal">
+                    <h3 class="faq__q">Is this cloaking? Will it hurt my SEO?</h3>
+                    <p class="faq__a">No. The agent version shows the same content as your original page, just in a machine-readable format, and the canonical tag always points back to the human-readable URL. It's a faithful representation of your content, not a shadow page built to manipulate rankings.</p>
+                </article>
+                <article class="faq__item reveal">
+                    <h3 class="faq__q">Do I need WordPress to use Agent-Native?</h3>
+                    <p class="faq__a">No. There are two ways to use it: a WordPress plugin that detects agents at request time and serves the structured version dynamically, or a browser-based web tool for static sites - upload your site's ZIP and get back an agent-native version plus the server configuration. Your files never leave your browser.</p>
+                </article>
+                <article class="faq__item reveal">
+                    <h3 class="faq__q">Which AI agents and crawlers are supported?</h3>
+                    <p class="faq__a">Agent-Native detects common AI crawlers such as ChatGPT (GPTBot), Claude (ClaudeBot), Perplexity and other LLM agents by their user agent. Detection is a best-effort approach - user agents can be spoofed - but it covers the major agents that read the web today.</p>
+                </article>
+            </div>
+        </section>
+    </main><script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is an llms.txt file?",
+                "acceptedAnswer": { "@type": "Answer", "text": "llms.txt is an emerging standard — think robots.txt, but for AI. It's a Markdown index that tells AI agents like ChatGPT, Claude and Perplexity what your site is about and points them to your most important pages, so they can read and cite you accurately. Agent-Native generates it (plus llms-full.txt) for you automatically." }
+            },
+            {
+                "@type": "Question",
+                "name": "How does Agent-Native make my website readable for AI agents?",
+                "acceptedAnswer": { "@type": "Answer", "text": "When a known AI agent requests a page, Agent-Native serves a clean, structured version of the same content — semantic HTML with JSON-LD and a Markdown version — without the navigation, scripts and layout clutter a model discards anyway. Your human visitors keep seeing your normal design." }
+            },
+            {
+                "@type": "Question",
+                "name": "Is this cloaking? Will it hurt my SEO?",
+                "acceptedAnswer": { "@type": "Answer", "text": "No. The agent version shows the same content as your original page, just in a machine-readable format, and the canonical tag always points back to the human-readable URL. It's a faithful representation of your content, not a shadow page built to manipulate rankings." }
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need WordPress to use Agent-Native?",
+                "acceptedAnswer": { "@type": "Answer", "text": "No. There are two ways to use it: a WordPress plugin that detects agents at request time and serves the structured version dynamically, or a browser-based web tool for static sites — upload your site's ZIP and get back an agent-native version plus the server configuration. Your files never leave your browser." }
+            },
+            {
+                "@type": "Question",
+                "name": "Which AI agents and crawlers are supported?",
+                "acceptedAnswer": { "@type": "Answer", "text": "Agent-Native detects common AI crawlers such as ChatGPT (GPTBot), Claude (ClaudeBot), Perplexity and other LLM agents by their user agent. Detection is a best-effort approach — user agents can be spoofed — but it covers the major agents that read the web today." }
+            }
+        ]
+    }
+    </script>
     <footer class="footer">
-        <div class="footer__inner"><a class="brand" href="#top"><span class="brand__mark" aria-hidden="true">A</span><span class="brand__name">agent-native<span class="brand__dot">.site</span></span></a>
+        <div class="footer__inner"><a class="brand" href="#top"><img class="img-fluid header-logo" width="2000" height="500" src="assets/img/web-logo.webp"></a>
             <nav class="footer__links" aria-label="Fußzeile"><a data-link="wordpress-plugin" href="https://github.com/otterbit-io/agent-native-wp/releases">WordPress-Plugin</a><a data-link="web-tool" href="https://tool.agent-native.site">Web-Tool</a><a href="https://github.com/otterbit-io">GitHub</a></nav>
             <p class="footer__meta">© 2026 otterbit.io</p>
         </div>

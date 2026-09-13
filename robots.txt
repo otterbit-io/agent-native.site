@@ -1,0 +1,47 @@
+# robots.txt for https://agent-native.site
+# AI agents are explicitly welcome here — that's the whole point of this site.
+
+User-agent: *
+Allow: /
+
+# --- OpenAI ---
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+
+# --- Anthropic ---
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+
+# --- Perplexity ---
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+
+# --- Google (Google-Extended is a training-use token, not a crawler) ---
+User-agent: Google-Extended
+Allow: /
+
+# --- Apple ---
+User-agent: Applebot-Extended
+Allow: /
+
+# --- Others ---
+User-agent: Amazonbot
+Allow: /
+User-agent: Meta-ExternalAgent
+Allow: /
+
+# Sitemap
+Sitemap: https://agent-native.site/sitemap.xml
+
+# AI-readable index of this site:
+# https://agent-native.site/llms.txt
