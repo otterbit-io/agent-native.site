@@ -698,3 +698,7 @@ html.anim .materialize.in-view {
   }
 }
 
+.header-logo {
+  width: 200px;
+}
+
